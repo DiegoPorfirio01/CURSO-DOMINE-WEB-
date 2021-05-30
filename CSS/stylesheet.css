@@ -1,17 +1,11 @@
-.fundo {
-    background-image: url('imagens/fundo.png');
-    background-color: rgb(67, 121, 121);
-    font-size: 10px;
-    font-weight: bolder;
+body {
+    background: grey url('imagens/fundo.png');
 }
 
-.body {
-    background-color: deepskyblue;
-    text-align: center;
-    text-indent: 5px;
-    text-align: center;
+#principal {
+    width: 900px;
 }
 
-.img {
-    background: left top no-repeat scroll;
+#menu {
+    background: yellowgreen;
 }
