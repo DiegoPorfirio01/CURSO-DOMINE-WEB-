@@ -1,5 +1,6 @@
 body {
-    background: grey url('imagens/fundo.png');
+    background: thistle url(imagens/fundo.png);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #principal {
@@ -7,5 +8,30 @@ body {
 }
 
 #menu {
-    background: yellowgreen;
+    padding: 18px;
+    background-color: seagreen;
+}
+
+a {
+    color: rgb(233, 134, 134);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#conteudo {
+    background: rgb(252, 252, 252);
+}
+
+.centralizar {
+    text-align: center
+}
+
+h1 {
+    color: #828271;
+    font-size: 1.2em;
+}
+
+.imgcampanha {
+    border: sienna 2px solid;
 }
