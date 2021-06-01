@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block - Inline - Inline-block</title>
+    <title>Posicionamento Static, Relative,Absolute e Fixed</title>
     <style>
-        .borda {
+        body {
+            background: salmon;
+        }
+        
+        #conteiner {
+            background: royalblue;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        
+        h1 {
+            position: ;
+        }
+        
+        p {
+            width: 300px;
+        }
+        
+        .relative {
             border: 1px solid red;
-            display: inline-block;
+            position: relative;
+            /*top,rigth,bottom,left*/
+            top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <span class="borda">Inline 1</span>
-    <span class="borda">inline 2</span>
-    <!--<h1 class="borda">Bloco 1</h1>
-    <h1 class="borda">Bloco 2</h1> -->
+    <div id="conteiner">
+        <h1>posicionamentos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
+
+        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
+
+    </div>
 
 </body>
 
