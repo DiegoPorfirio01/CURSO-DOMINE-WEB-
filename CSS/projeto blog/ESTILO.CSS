@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: coral;
+}
+
+#cabecalho {
+    background: rgb(255, 239, 11);
+    text-align: center;
+    padding: 15px;
+}
+
+#areamenu {
+    padding: 10px;
+}
+
+.branco {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: tomato;
+    background: violet;
+}
+
+a {
+    text-decoration: none;
+}
