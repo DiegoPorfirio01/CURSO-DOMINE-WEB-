@@ -1,71 +1,30 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento Static, Relative,Absolute e Fixed</title>
+    <title>LINKS Estilos</title>
     <style>
-        body {
-            background: salmon;
+        a :link {
+            color: lightcoral;
         }
         
-        #conteiner {
-            background: royalblue;
-            width: 800px;
-            margin: 10px auto;
-            padding: 10px;
-            position: relative;
+        a :visited {
+            color: lightsalmon;
         }
         
-        h1 {}
-        
-        p {
-            width: 300px;
-        }
-        
-        .fixed {
-            position: fixed;
-            border: 1px solid red;
-            background: aqua;
-            bottom: 0px;
-            right: 0px;
-            margin: 0px
-        }
-        
-        .absolute {
-            position: absolute;
-            border: 1px solid red;
-            top: 0px;
-            background: aqua;
-            right: 20px;
-        }
-        
-        .relative {
-            border: 1px solid red;
-            position: relative;
-            /*top,rigth,bottom,left*/
-            top: 20px;
+        a:hover {
+            color: limegreen;
+            background: mediumaquamarine;
         }
     </style>
 </head>
 
 <body>
-    <div id="conteiner">
-        <h1>posisionamento</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
+    <a href="">link</a> | <a href=""> link</a> | <a href="">link</a> | <a href="">link</a>
 
-        <p class="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat error rem provident, dolor veritatis odit adipisci quae sed quaerat molestias odio non. Expedita nam, laudantium nostrum accusantium odit nulla!</p>
-
-    </div>
 
 </body>
 
