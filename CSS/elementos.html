@@ -1,41 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br
-
-">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos Flutuantes</title>
+    <title>Noticias</title>
     <style>
-    .conteudo {
-            background: blue;
-            border: 2px solid black;
-            width: 200px;
-            height: 200px;
-            margin: 1px;
+        .noticia {
+            background: burlywood;
+            padding: 5px;
+            width: 280px;
+            margin: 7px;
+            float: left;
         }
-        /*.conteudo1 {
-            background: rgb(173, 106, 162);
-            border: 2px solid black;
-            width: 150px;
-            height: 150px;
-            margin: 1px;
-            float: left; */
-    }
+        
+        #principal {
+            width: 915px;
+            border: 1px solid red;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .galeria {
+            width: 265px;
+            background: lightcyan;
+            padding: 5px;
+            float: left;
+            margin: 15px;
+        }
+        
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="conteudo1">conteúdo1
+    <div id="principal">
+
+        <div class="noticia">
+            <h2>LOREM</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia ex sapiente recusandae nostrum ratione dignissimos fugiat soluta deserunt vitae, sed asperiores eum optio provident labore expedita minus. Ratione, nulla.</p>
+            <a href="">saiba mais ></a>
+        </div>
+        <div class="noticia">
+            <H2>LOREM</H2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae maxime labore aperiam libero facere blanditiis laboriosam voluptate sed aspernatur harum ad tempora alias consequuntur fuga qui, possimus architecto corrupti nihil.</p>
+            <a href="">saiba mais ></a>
+        </div>
+        <div class="noticia">
+            <h2>LOREM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa amet necessitatibus impedit numquam commodi magnam consequatur expedita. Optio nam velit blanditiis possimus modi provident facere nesciunt, dolore aliquid quia labore.</p>
+            <a href="">saiba mais ></a>
+        </div>
+        <div class="clear"></div>
+        <div class="galeria">
+            <img src="imagens/imagens/imagem1.png" alt="">
+            <p>resumo</p>
+        </div>
+        <div class="galeria">
+            <img src="imagens/imagens/imagem2.png" alt="">
+            <p>resumo</p>
+        </div>
+        <div class="galeria">
+            <img src="imagens/imagens/imagem3.png" alt="">
+            <p>resumo</p>
+        </div>
+        <div class="galeria">
+            <img src="imagens/imagens/imagem4.png" alt="">
+            <p>resumo</p>
+        </div>
+        <div class="galeria">
+            <img src="imagens/imagens/imagem5.png" alt="">
+            <p>resumo</p>
+        </div>
+
+
+
+
+
+
+
+
+
 
     </div>
-    <div class="conteudo">conteúdo2
+
     </div>
-    <div class="conteudo">
-        conteudo
-    </div>
+
 </body>
 
 </html>
