@@ -1,0 +1,36 @@
+/* * {
+     border: 1px solid red;
+ }
+ 
+ h1 {
+     color: royalblue;
+ }
+ 
+ .verde {
+     color: seagreen;
+ }
+ 
+ p.verde {
+     color: green
+ }
+ 
+ #cabecalho {
+     color: green;
+ } */
+
+a {
+    text-decoration: none;
+}
+
+li>a {
+    color: green;
+    background: honeydew;
+}
+
+div>a {
+    color: lawngreen;
+}
+
+p>a {
+    color: rgb(141, 59, 0);
+}
