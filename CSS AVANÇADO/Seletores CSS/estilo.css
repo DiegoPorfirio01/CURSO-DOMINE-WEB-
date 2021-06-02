@@ -34,3 +34,7 @@ div>a {
 p>a {
     color: rgb(141, 59, 0);
 }
+
+h1+p {
+    color: chocolate;
+}
