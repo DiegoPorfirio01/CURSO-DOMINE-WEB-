@@ -13,25 +13,51 @@ body {
     background: rgb(255, 239, 11);
     text-align: center;
     padding: 15px;
+    border: 2px solid red;
+    margin-bottom: 5px;
 }
 
+#arealogo,
 #areamenu {
     padding: 10px;
+}
+
+#areaprincipal {
+    width: 920px;
+    margin: 0 auto;
+}
+
+#areapostagens {
+    width: 660px;
+    float: left;
+    background: white;
+}
+
+#arealateral {
+    width: 240px;
+    float: right;
+    background: white;
 }
 
 .branco {
     color: white;
 }
 
-a:visited {
-    color: white;
+a {
+    color: rgb(153, 149, 149);
 }
 
 a:hover {
-    color: tomato;
-    background: violet;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 29, 82);
 }
 
 a {
     text-decoration: none;
+}
+
+#rodape {
+    background: yellowgreen;
+    clear: both;
+    text-align: center;
 }
