@@ -1,0 +1,37 @@
+                /*ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        padding: 5px 20px;
+        background: url(arquivos-necessarios-barra-navegacao-vertical/arquivos-necessarios-barra-navegacao-vertical/seta.png) no-repeat left;
+    }*/
+                
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                }
+                
+                ul a {
+                    width: 200px;
+                    /* A imagem tem 400px, mas 200px cada parte, ela vai se mover, portanto esta com tamanho da metade configurado  */
+                    height: 40px;
+                    border: 1px solid red;
+                    display: block;
+                    /*tamanho imagem - border não havia ficado com tamanho configurado, pois link é elemnto inline, portanto Display:block; resolveu ( elemento inline, tem o tamanho que o conteudo ocupa)
+                */
+                    background: url(arquivos-necessarios-barra-navegacao-vertical/arquivos-necessarios-barra-navegacao-vertical/menu.png) no-repeat left bottom;
+                    color: #000;
+                    text-decoration: none;
+                    text-indent: 40px;
+                    line-height: 40px;
+                    /*Tamanho da linha - tamanho 40 pois é a altura da imagem*/
+                }
+                
+                a:hover {
+                    background-position: right bottom;
+                    color: white;
+                }
