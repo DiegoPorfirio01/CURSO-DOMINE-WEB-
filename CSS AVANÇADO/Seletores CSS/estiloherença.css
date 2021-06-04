@@ -1,0 +1,23 @@
+    body {
+        color: brown;
+        border: 1px solid black;
+    }
+    
+    h2 {
+        color: grey;
+    }
+    /* terceiro */
+    
+    h2.verde {
+        color: green;
+    }
+    /* Segundo    */
+    
+    #pagina p {
+        color: cornflowerblue;
+    }
+    
+    h2#amarelo {
+        color: rgb(208, 255, 0);
+    }
+    /* Primeiro   */
