@@ -1,0 +1,38 @@
+ul {
+    margin: o;
+    padding: 0;
+    background: #159cb0 url(arquivos-necessarios-navegacao-horizontal/fundo-horizontal.png) repeat-x;
+    width: 720px;
+    list-style: none;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: silver;
+    background: url(arquivos-necessarios-navegacao-horizontal/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    color: rgba(15, 15, 15, 0.829);
+    background: turquoise;
+}
+
+#home #navegaçãohori .home a,
+#sobre #navegaçãohori .sobre a,
+#serviços #navegaçãohori .serviços a,
+#contato #navegaçãohori .contato a {
+    color: rgba(15, 15, 15, 0.829);
+    background: turquoise;
+}
