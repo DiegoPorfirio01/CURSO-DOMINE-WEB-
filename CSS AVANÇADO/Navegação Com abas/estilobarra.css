@@ -1,0 +1,38 @@
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    ul {
+        margin: o;
+        padding: 0;
+        list-style: none;
+        width: 720px;
+    }
+    
+    ul li {
+        float: left;
+        border: 1px solid springgreen;
+        background: url(arquivos-necessarios-navegacao-abas/aba-direita.png) no-repeat top right;
+    }
+    /* aba-direita2    abaesquerda2   tem mesmos tamanhos, só são mais arredondadas, opção de outra aba*/
+    
+    li a {
+        display: block;
+        padding: 0 2em;
+        line-height: 3em;
+        text-decoration: none;
+        background: url(arquivos-necessarios-navegacao-abas/aba-esquerda.png) no-repeat;
+        color: white;
+    }
+    
+    ul a:hover {
+        color: #894a1f;
+    }
+    
+    ul #atual {
+        background: url(arquivos-necessarios-navegacao-abas/aba-direita-atual.png) no-repeat top right;
+    }
+    
+    ul #atual a {
+        background: url(arquivos-necessarios-navegacao-abas/aba-esquerda-atual.png) no-repeat;
+    }
