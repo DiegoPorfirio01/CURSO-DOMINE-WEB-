@@ -23,8 +23,8 @@
                     display: block;
                     /*tamanho imagem - border não havia ficado com tamanho configurado, pois link é elemnto inline, portanto Display:block; resolveu ( elemento inline, tem o tamanho que o conteudo ocupa)
                 */
-                    background: url(arquivos-necessarios-barra-navegacao-vertical/arquivos-necessarios-barra-navegacao-vertical/menu.png) no-repeat left bottom;
-                    color: #000;
+                    background: yellow url(arquivos-necessarios-barra-navegacao-vertical/arquivos-necessarios-barra-navegacao-vertical/menu.png) no-repeat left bottom;
+                    color: white;
                     text-decoration: none;
                     text-indent: 40px;
                     line-height: 40px;
@@ -33,5 +33,15 @@
                 
                 a:hover {
                     background-position: right bottom;
-                    color: white;
+                    background-color: #f99200;
+                }
+                /* Coloca-se background-color e background yellow, para que caso a imagem do fundo não carregue, ainda tenha um fundo e uma transição*/
+                
+                #home #navegaçãolate .home a,
+                #sobre #navegaçãolate .sobre a,
+                #serviços #navegaçãolate .serviços a,
+                #contato #navegaçãolate .contato a {
+                    background-position: right bottom;
+                    background-color: #f99200;
+                    color: #000;
                 }
