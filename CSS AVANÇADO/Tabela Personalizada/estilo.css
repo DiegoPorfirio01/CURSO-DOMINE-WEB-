@@ -1,0 +1,31 @@
+        table {
+            width: 600px;
+            border-collapse: separate/*
+        collapse;
+        */
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+        
+        th {
+            text-transform: uppercase;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #111;
+            text-align: left;
+            letter-spacing: 0.1em;
+            /*Espaço entre as letras*/
+            font-size: 90%;
+        }
+        
+        tr.alternado {}
+        
+        tr:hover {
+            background-color: #c3e6e5;
+        }
+        
+        .numero {
+            text-align: right;
+        }
