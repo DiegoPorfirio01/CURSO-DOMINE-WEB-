@@ -1,0 +1,18 @@
+.caixa {
+    width: 400px;
+    background: #dedede url(arquivos-necessarios-arredondamento-com-imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(arquivos-necessarios-arredondamento-com-imagens/topo2.png) no-repeat left top;
+}
+
+.caixa .ultimo {
+    background: url(arquivos-necessarios-arredondamento-com-imagens/baixo2.png) no-repeat left bottom;
+    padding-bottom: 20px;
+}
+
+.caixa p {
+    padding: 0 20px;
+}
