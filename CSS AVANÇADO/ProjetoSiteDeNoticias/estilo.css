@@ -1,14 +1,17 @@
+/* Estrutura do site
+*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     background: #fff url(imagens/fundo.png) repeat-x;
 }
 
-#principal {
+#container {
     width: 750px;
     margin: 0 auto;
 }
@@ -17,6 +20,7 @@ body {
     height: 150px;
     background: url(imagens/detalhe-topo.png) no-repeat right top;
     padding-top: 25px;
+    /*border: 1px solid red;*/
 }
 
 .logo {
@@ -26,15 +30,29 @@ body {
     text-indent: -3000px;
 }
 
-#topo ul {
-    background: #b10333;
-    margin-top: 30px;
+
+/* Barra de navegação
+*/
+
+a:link,
+a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+#topo ul {
+    margin-top: 30px;
+    background: #b10333;
     float: left;
 }
 
@@ -48,7 +66,7 @@ ul {
     padding: 0.5em 1.5em;
     line-height: 2.1em;
     text-decoration: none;
-    color: azure;
+    color: #fff;
     background: url(imagens/divisor.png) no-repeat left center;
 }
 
@@ -60,21 +78,21 @@ ul {
     color: #69001d;
 }
 
-body.brasil #navegaçao a#brasil,
-body.home #navegaçao a#home,
-body.internacional #navegaçao a#internacional,
-body.economia #navegaçao a#economia,
-body.fotos #navegaçao a#fotos,
-body.saude #navegaçao a#saude,
-body.ciencia #navegaçao a#ciencia {
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos {
     color: #fff;
     background: #de003e;
     cursor: text;
 }
 
+
+/* Configura layout de três colunas */
+
 #conteudo {
-    background: #f5f5f5;
     margin-top: 60px;
+    background: #f5f5f5;
 }
 
 #lateral {
@@ -83,16 +101,8 @@ body.ciencia #navegaçao a#ciencia {
     margin: 0 0 20px -750px;
 }
 
-#secundario {
+#primario {
     width: 270px;
-    background: darkgreen;
-    float: left;
-    margin: 0 0 20px 15px;
-}
-
-#tres-colunas #primario {
-    width: 270px;
-    background: darkcyan;
     float: left;
     margin: 0 0 20px 195px;
 }
@@ -106,10 +116,19 @@ body.ciencia #navegaçao a#ciencia {
     margin: 0 0 20px 0;
 }
 
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+
+/*Caixa*/
+
 .caixa {
-    background: #f3f3f3 url(imagens/fundo-caixa.png);
     margin: 10px 0;
-    padding: 5px 0 5px;
+    padding: 5px;
+    background: #f3f3f3 url(/imagens/fundo-caixa.png);
 }
 
 h2 {
@@ -125,7 +144,111 @@ h2 {
     margin-top: 5px;
 }
 
-#conteiner-rodape {
+
+/* Formatar menus laterais
+*/
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+
+/* Formatando formulários
+*/
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+    margin: 5px 0 0 25px;
+}
+
+
+/*
+img {
+    border: 2px solid#dfdfdf;
+}*/
+
+img.principal {
+    width: 98%;
+    border: 3px solid#dfdfdf;
+}
+
+
+/*Formatando Cabeçalhos*/
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #b10333;
+    color: rgb(14, 13, 13);
+}
+
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 66px;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 3px;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em
+}
+
+#list-noticias li:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+
+/*Rodape*/
+
+#container-rodape {
     background: #294c71;
     padding: 20px;
 }
@@ -133,9 +256,5 @@ h2 {
 #rodape {
     width: 750px;
     margin: 0 auto;
-    color: antiquewhite;
-}
-
-color: antiquewhite;
-
+    color: #fff;
 }

@@ -12,7 +12,7 @@
 <body id="tres-colunas" class="home">
 
     <!-- INICIO DO CONTEINER-->
-    <div id="principal">
+    <div id="container">
 
         <!-- INICIO TOPO-->
         <div id="topo">
@@ -32,31 +32,153 @@
         <!--INICIO CONTEÚDO-->
         <div id="conteudo">
 
-            <div id="primario">Primario</div>
-            <div id="secundario">Secundario</div>
+            <div id="primario">
+                <div class="caixa destaque">
+                    <h2>Destaques</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Nova Legislação</h3>
+                        <img class="principal" src="imagens/taxi.jpg" alt="" width="100%">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2>Mundo</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="secundario">
+                <div class="caixa entrevista">
+                    <h2>Última entrevista</h2>
+                    <div class="caixa-conteudo">
+
+                        <h3>ENTREVISTA COM FULANO 1</h3>
+                        <img class="principal" src="imagens/doutor.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <A>Saiba mais</A>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2>Noticias Recentes</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="imagens/tecnologia.jpg" alt="" width="80px">
+                                    <h3> Novas tecnologias ! </h3>
+                                    <p>Lorem ipsum dolor sit amet conetur adipisicing elit. </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!--Inicio lateral-->
             <div id="lateral">
                 <div class="caixa">
                     <h2>Entrevistas</h2>
                     <div class="caixa-conteudo">
-                        conteudo
+                        <ul>
+                            <li> <a href="">Fulano Um</a> </li>
+                            <li> <a href="">Fulano Dois</a> </li>
+                            <li> <a href="">Fulano Tres</a> </li>
+                            <li> <a href="">Fulano Quatro</a> </li>
+                            <li> <a href="">Fulano Cinco</a> </li>
+                            <li> <a href="">Fulano Seis </a></li>
+                            <li> <a href="">Fulano Sete</a> </li>
+                            <li> <a href="">Fulano Oito</a> </li>
+                        </ul>
+                    </div>
+                    <!--FIM CONTEÚDO-->
+                </div>
+                <div class="caixa">
+                    <h2>Novidades</h2>
+                    <div class="caixa-conteudo">
+                        <ul>
+                            <li> <a href="">Fulano Um</a> </li>
+                            <li> <a href="">Fulano Dois</a> </li>
+                            <li> <a href="">Fulano Tres</a> </li>
+                            <li> <a href="">Fulano Quatro</a> </li>
+                            <li> <a href="">Fulano Cinco</a> </li>
+                            <li> <a href="">Fulano Seis </a></li>
+                            <li> <a href="">Fulano Sete</a> </li>
+                            <li> <a href="">Fulano Oito</a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="caixa">
+                    <h2>Entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <form action="">
+                            <div>
+                                <label for="email"> Email:</label>
+                                <input type="text" name="email" id="email" placeholder="E-mail">
+                            </div>
+                            <div><input class="submit" type="submit" value="Cadastrar"></div>
+                        </form>
+                    </div>
+                    <!--FIM lateral-->
+
+                </div>
+                <div id="conteiner-rodape" style="clear: both;">
+                    <div id="rodape">
+                        &copy; Copyrigt 2000-2021 Noticias da Cidade do Diego
                     </div>
                 </div>
-
-
-            </div>
-            <!--FIM lateral-->
-        </div>
-
-        <!--FIM CONTEÚDO-->
-
-    </div>
-    <div id="conteiner-rodape" style="clear: both;">
-        <div id="rodape">
-            &copy; Copyrigt 2000-2021 Noticias da Cidade do Diego
-        </div>
-    </div>
-    <!-- FIM DO CONTEINER -->
+                <!-- FIM DO CONTEINER -->
 </body>
 
 </html>
