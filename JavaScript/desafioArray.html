@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Array</title>
+    <script>
+     
+
+     
+    var objetos = Array ('cadeira','mesa','toalha')
+
+
+    function adicionarObjetos() {
+        var objeto = document.getElementById('objeto').value
+
+    if (objeto != '') {
+
+     if (objetos.indexOf(objeto) !== -1) {
+
+        alert('Objeto já foi adicionado')
+       
+
+    }else { objetos.push(objeto)
+            console.log(objetos)
+        
+document.getElementById('objeto').value = ''
+} else {
+alert('informe valor válido')
+
+}
+}
+
+
+
+
+function ordernarObjetos() { 
+objetos.sort()
+console.log(objetos)
+}
+    
+
+
+     
+
+
+    
+
+    
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<input type="text" name="" id="objeto">
+<button onclick="adicionarObjeto()">Enviar !</button>
+<button onclick="ordenarObjetos()"> Ordenar !</button>
+
+
+</body>
+
+</html>
