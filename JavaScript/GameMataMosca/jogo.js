@@ -17,8 +17,6 @@ function posicaoRandom() {
 
 
 
-
-
     var posicaox = Math.floor(Math.random() * largura) - 90
     var posicaoy = Math.floor(Math.random() * altura) - 90
 
