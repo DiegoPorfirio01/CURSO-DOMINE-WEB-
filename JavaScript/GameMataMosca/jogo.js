@@ -10,12 +10,22 @@ function ajustaTamanhoPalcoJogo() {
 
 ajustaTamanhoPalcoJogo()
 
+
 function posicaoRandom() {
+    //removendo mosca, caso já exista não remover
+
+
+
+
+
 
     var posicaox = Math.floor(Math.random() * largura) - 90
     var posicaoy = Math.floor(Math.random() * altura) - 90
+
     posicaox = posicaox < 0 ? 0 : posicaox
     posicaoy = posicaoy < 0 ? 0 : posicaoy
+
+
     console.log(posicaoy, posicaox)
 
     var mosca = document.createElement('img')
@@ -24,8 +34,13 @@ function posicaoRandom() {
     mosca.style.left = posicaox + 'px'
     mosca.style.top = posicaoy + 'px'
     mosca.style.position = 'absolute'
+    mosca.id = 'mosca'
+    mosca.onclick = function() {
+        this.remove()
+    }
     document.body.appendChild(mosca)
     console.log(ladoAleatorio())
+
 
 }
 
