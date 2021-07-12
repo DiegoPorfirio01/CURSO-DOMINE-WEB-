@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html>
- <head>
- <meta charset="utf-8">
- <title>JavaScript</title>
- <script>
- 
+<html lang="pt-br">
 
-var lista_frutas []
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar objeto</title>
 
- lista_frutas[0] = 'morango'
- lista_frutas[1] = 'maça'
- lista_frutas[2] = 'banana'
- lista_frutas[3] = 'goiaba'
- lista_frutas[4] = 'laranja'
+<script>
+    
+var lista = Array('1','2','3','4','5','6')
 
- console.log(lista_frutas)
- 
+function Pegar() {
+    var dados = document.getElementById('dados').value
 
- </script>
+    if (dados != '') {
 
- </head>
- <body>
+            if (lista.indexOf(dados) !== -1) {
+                alert(' você ja digitou isso !')
 
- <input type="text" id="objeto" />
- <button onclick="adicionarObjetos()">Adicionar</button>
- <button onclick="ordenarObjetos()">Ordenar</button>
- </body>
+            }       else{ lista.push(dados)
+                    document.getElementById('dados').value =''
+                    console.log(lista)
+
+        }
+
+
+    }
+
+} 
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+
+
+<body>
+<input type="text" name="" id="dados">
+<button onclick="Pegar()">PEGAR</button>
+
+
+</body>
+
 </html>
