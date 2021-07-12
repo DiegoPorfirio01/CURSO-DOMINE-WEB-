@@ -7,32 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar objeto</title>
 
-<script>
-    
-var lista = Array('1','2','3','4','5','6')
+    <script>
+        var lista = Array('1', '2', '3', '4', '5', '6')
 
-function Pegar() {
-    var dados = document.getElementById('dados').value
+        function Pegar() {
+            var dados = document.getElementById('dados').value
 
-    if (dados != '') {
+            if (dados != '') {
 
-            if (lista.indexOf(dados) !== -1) {
-                alert(' você ja digitou isso !')
+                if (lista.indexOf(dados) !== -1) {
+                    alert(' você ja digitou isso !')
 
-            }       else{ lista.push(dados)
-                    document.getElementById('dados').value =''
+                } else {
+                    lista.push(dados)
+                    document.getElementById('dados').value = ''
                     console.log(lista)
 
+                }
+
+
+            }
+            switch (key) {
+                case value:
+
+                    break;
+
+                default:
+                    break;
+            }
+
         }
-
-
-    }
-
-} 
-
-
-
-</script>
+    </script>
 
 
 
@@ -43,8 +48,8 @@ function Pegar() {
 
 
 <body>
-<input type="text" name="" id="dados">
-<button onclick="Pegar()">PEGAR</button>
+    <input type="text" name="" id="dados">
+    <button onclick="Pegar()">PEGAR</button>
 
 
 </body>

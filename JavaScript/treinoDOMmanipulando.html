@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM 1 </title>
+
+    <script>
+function pressionarNumero(){ 
+var val = document.getElementById('valores').value
+    val.trim()  
+    document.getElementById('valores').value = ''
+     
+
+    switch (val) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+
+        document.getElementById("numeros").value += val
+        break;
+        default: document.getElementById('letras').value += val
+
+    }
+}
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+<input onkeyup="pressionarNumero()" type="text" name="" id="valores">
+<br>
+<br>
+<input type="text" disabled="disabled" name="" id="letras">
+<input type="text"  disabled="disabled" name="" id="numeros">
+
+
+
+
+</body>
+
+</html>
