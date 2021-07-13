@@ -8,30 +8,30 @@
     <title> DOM 1 </title>
 
     <script>
-function pressionarNumero(){ 
-var val = document.getElementById('valores').value
-    val.trim()  
-    document.getElementById('valores').value = ''
-     
+         
+var lista = []
+    lista[0] = 'maça'
+    lista[1] = 'beteraba'
+    lista[2] = 'banana'
+    lista[3] = 'alucard'
 
-    switch (val) {
-        case '0':
-        case '1':
-        case '2':
-        case '3':
-        case '4':
-        case '5':
-        case '6':
-        case '7':
-        case '8':
-        case '9':
+function enviar(){
 
-        document.getElementById("numeros").value += val
-        break;
-        default: document.getElementById('letras').value += val
+var dados = document.getElementById('entrada').value
+    if (dados != '') {
 
+        if (lista.indexOf(dados) !== -1 ) {
+            alert('Voc~e já digitou isso')
+
+        }else{ lista.push(dados)  
+               console.log(lista)
+               document.getElementById('entrada').value = ''
+
+        }
     }
-}
+
+} 
+
 
 
     </script>
@@ -40,15 +40,9 @@ var val = document.getElementById('valores').value
 
 <body>
 
-
-
-<input onkeyup="pressionarNumero()" type="text" name="" id="valores">
-<br>
-<br>
-<input type="text" disabled="disabled" name="" id="letras">
-<input type="text"  disabled="disabled" name="" id="numeros">
-
-
+<input type="text" name="" id="entrada">
+<button onclick="enviar()">Enviar</button>
+<button onclick="Organiza()">Organiza</button>
 
 
 </body>
