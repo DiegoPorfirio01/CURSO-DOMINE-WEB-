@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript</title>
+    
+    <script>
+ /* let cadeira = []
+  cadeira[0]=[]
+  cadeira[0]['cor'] = 'vermelha'
+  cadeira[0]['pernas'] = 4
+  cadeira[0]['gira'] = false
+  cadeira[0]['preço'] = 200
+  cadeira[1]=[]
+  cadeira[1]['cor'] = 'azul'
+  cadeira[1]['pernas'] = 4
+  cadeira[1]['gira'] = true
+  cadeira[1]['preço'] = 200
+  let sofa = []
+  sofa[0] = []
+  sofa[0]['cor'] = 'vermelho'
+  sofa[0]['material'] = 'algodao' 
+  sofa[0]['estado'] = 'novo'
+  sofa[1] = []
+  sofa[1]['cor'] = 'azul'
+  sofa[1]['material'] = 'algodao'
+  sofa[1]['estado'] = 'velho'
+  
+  console.log(cadeira)
+  console.log(sofa)
+   
+function TemCor(indice){
+    if (cadeira[indice]['cor'] == 'azul') {
+        document.write('tem cadeira azul')
+    }else { document.write('não tem cadeira azul')}
+}
+
+TemCor(0)
+
+function adicionarCadeira(x,y,c,d){
+    let cadeiras = []
+        cadeiras['cor'] = x
+        cadeiras['pernas'] = y
+        cadeiras['preço'] = c
+        cadeiras['gira'] = d
+
+        cadeira.push(cadeiras)
+}
+
+adicionarCadeira('verde',5,200,true)
+*/
+
+class Cadeiras {
+
+
+    constructor(cor = 'branca',material = 'aco',gira = false){
+
+    this.cor = cor 
+    this.material = material
+    this.gira = gira
+    }
+    
+    GirarCadeira(){ 
+    if(this.gira == true){ 
+        console.log('cadeira Girando')
+        }
+        else{ console.log('cadeira não gira') }
+        }
+    
+    }
+
+
+let cadeira = new Cadeiras('azul',undefined, true )
+console.log(cadeira)
+cadeira.GirarCadeira()
+
+
+let Cadeiras1 = []
+Cadeiras1[0] = []
+Cadeiras1[0]['cor'] = 'azul'
+Cadeiras1[0]['material'] = 'aco'
+Cadeiras1[0]['gira'] = true
+Cadeiras1[1] = []
+Cadeiras1[1]['cor'] = 'vermelho'
+Cadeiras1[1]['material'] = 'aco'
+Cadeiras1[1]['gira'] = false 
+
+    console.log(Cadeiras1)
+
+
+let cadeira1 = []
+cadeira1['cor'] = 'vermelh111'
+cadeira1['material'] = 'aco'
+cadeira1['gira'] = true
+
+Cadeiras1.push(cadeira1) 
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

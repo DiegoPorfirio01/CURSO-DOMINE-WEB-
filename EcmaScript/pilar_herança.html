@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaaScript</title>
+    
+<script>
+
+class Animal { 
+    constructor(cor,tamanho,peso){
+        this.cor = cor
+        this.tamanho = tamanho
+        this.peso = peso
+
+    }
+
+    dormir(){console.log('dormir')}
+
+}
+
+class Passaro extends Animal {
+    constructor(voando,cor,tamanho,peso){
+        super(cor,tamanho,peso)
+        this.voando = voando
+    }
+
+    voar(){
+        console.log('voar')}
+
+}
+
+class Papagaio extends Passaro {
+    constructor(falar){
+        super('sim','azul',22,333)
+        this.falar = falar
+
+    }
+}
+
+let x = new Papagaio(true)
+x.voar()
+console.log(x)
+let y = new Passaro('SIM','AZUL',333,222)
+console.log(y)
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

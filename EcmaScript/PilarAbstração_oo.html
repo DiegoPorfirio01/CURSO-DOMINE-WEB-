@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript</title>
+    
+    <script>
+    
+        class ContaBancaria {
+
+        constructor() {
+            this.agencia = 2020
+            this.numeroConta = 20
+            this.saldo = 2000
+            this.limite = 5000
+        }
+
+        depositar(valorDeposito){
+            this.saldo += valorDeposito
+        }
+        sacar(valorSaque){
+            this.saldo -= valorSaque//saldo - saque
+        }
+        
+        consultarSaldo(){
+           return this.saldo
+        }
+    
+}
+       let conta = new ContaBancaria()
+       let conta2 = new ContaBancaria()
+       conta.depositar(20)
+       conta.sacar(500)
+       console.log(conta.consultarSaldo())
+
+
+     
+       
+    
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

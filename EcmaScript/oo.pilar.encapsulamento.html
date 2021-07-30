@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaaScript</title>
+    
+    <script>
+    
+
+class Tv {
+    constructor(){
+        this._relacaoCanais = Array(1,5,6,7)
+        this._canalAtivo = null
+        this._volume = 4
+    }
+
+
+    get canalAtivo(){
+        return this._canalAtivo
+    }
+
+    set canalAtivo(canal){
+        if(this._relacaoCanais.indexOf(canal) !== -1 ){
+            this._canalAtivo = canal
+            
+        }
+    } 
+}
+
+let tv = new Tv()
+tv.canalAtivo = 7
+console.log(tv.canalAtivo)
+
+
+
+
+
+
+
+class Cadeira {
+   
+constructor() {
+    this._cor = 'azul'
+    this._material = 'aco'
+    this._gira = true
+}
+
+set AdicionarCor(cor){
+    this._cor = cor
+}
+
+get AdicionarCor(){
+    return this._cor
+}
+
+girarCadeira() {
+    if (this._gira == true) {
+        console.log('cadeira gira')
+    }else ( console.log ('cadeira não gira'))
+}
+
+
+}
+
+x = new Cadeira()
+x.AdicionarCor = 'azul'
+console.log(x.AdicionarCor)
+x.girarCadeira()
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
