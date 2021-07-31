@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaaScript</title>
+    
+<script>
+
+
+let Carro = function() {
+    //por estar dentro do escopo da funcao, ela se torna privado.
+    var velocidadeMaxima = 360
+    var quilometros = 0
+    this.velocidadeAtual = 0
+
+
+    this.acelerar = function(){
+        let attr = this.getVelocidadeAtual() + 60
+        if(attr >= velocidadeMaxima){
+           attr = velocidadeMaxima
+        }
+      this.setVelocidadeAtual(attr)
+        setQuilometros(0.5) 
+        console.log(quilometros)
+
+    } 
+
+    var getQuilometros = function() {
+        return quilometros
+    }
+
+    var setQuilometros = function (k){
+        quilometros += k
+    }
+
+    this.getVelocidadeAtual = function() {
+        return this.velocidadeAtual
+    }
+
+    this.setVelocidadeAtual = function(attr) {
+        this.velocidadeAtual = attr
+    }
+
+}
+
+let carro = new Carro()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+console.log(carro.quilometros)//aqui ele não recupera
+console.log(carro.velocidadeAtual)
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
