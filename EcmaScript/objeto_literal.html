@@ -83,7 +83,7 @@ pessoa.nome = 'pessoa'
 pessoa.idade = 100
 
 console.log(pessoa)
-*/
+
 
 
 
@@ -99,6 +99,56 @@ pessoa1: 'fulano2'
  pessoa.pessoa2 = 'fulano 1-0'
  pessoa.pessoa1 = 'fulanooooo'
 console.log(pessoa)
+
+
+
+let fusca  = {
+    rodas: 'redondas',
+    portas: 1
+}
+
+
+//nome/valor
+fusca.velocidade = 300
+
+//arrow function
+fusca.acelerarCarro = () => console.log('ola')
+    
+
+fusca.acelerarCarro()
+console.log(fusca)
+
+
+*/
+
+
+let assinatura =  {
+    idCliente:1000,
+    descricao:'cliente bom',
+    status(){
+        console.log('ativo')
+    }
+}
+
+assinatura.status()
+
+//a variavel y, faz referência ao objeto literal, caso mude o objeto em y, é referido o objeto e muda o objeto !
+
+let y = assinatura
+y.idCliente = 50
+y.descricao = 'clienteRuim'
+
+
+console.log(assinatura)
+
+console.log(y)
+
+
+
+
+
+
+
 
 
 </script>

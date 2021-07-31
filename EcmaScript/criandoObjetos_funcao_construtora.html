@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaaScript</title>
+    
+<script>
+class Carro { 
+    constructor(cor,nome,ano,velocidadeAtual) {
+        this.cor = cor
+        this.nome = nome
+        this.ano = ano
+        this.velocidadeAtual = velocidadeAtual
+    }
+
+    acelerar() { 
+    let y = this.getVelocidadeAtual() + 20
+    this.setVelocidadeAtual(y)
+
+    }
+
+    
+    getVelocidadeAtual(){
+        return this.velocidadeAtual
+    }
+
+
+
+    setVelocidadeAtual(y){
+        this.velocidadeAtual = y
+    }
+
+
+}
+
+class Fusca extends Carro { 
+    constructor(agua,velocidadeAtual){
+        super('azul','fuscao',1992,0)
+        this.agua = agua
+    }
+
+}
+
+let carro = new Carro('azul','carro',1990,0)
+carro.acelerar()
+
+console.log(carro)
+
+let fusca = new Fusca(false)
+fusca.acelerar()
+console.log(fusca)
+
+
+
+let Pessoa = {
+
+    nome:'fulano',
+    idade:'idade',
+    sexo:'sexo',
+    mostrarSexo: function(){
+    console.log(this.sexo)
+    }
+
+}
+
+
+console.log(Pessoa)
+Pessoa.mes = 'indefinido'
+Pessoa.aniversario = 'janeiro'
+
+Pessoa.Vivendo = () => (console.log('vivendo'))
+
+Pessoa.Vivendo()
+Pessoa.mostrarSexo()
+
+
+
+
+let Frutas = function(){
+   
+    this.nome ='desconhecida'
+    this.cor = 'azul'
+    this.quantidade = 0
+
+    
+    
+    this.adicionarFruta = function() {
+        let attr = this.getQuantidade() + 1
+        this.setQuantidade(attr)
+
+
+    }
+
+    this.getQuantidade = function() {
+        return this.quantidade
+    }
+
+    this.setQuantidade = function(attr) { 
+        this.quantidade = attr
+
+    }
+}
+
+
+let frutas = new Frutas()
+frutas.adicionarFruta()
+console.log(frutas)
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
