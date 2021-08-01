@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script >
+    //spread espalhar(...) rest juntar
+    
+//spread
+
+    let coisas = 'muitas coisas'
+
+    console.log(...coisas)
+    console.log([...coisas])
+
+
+    let listaCoisas = ['coisas1','coisas2','coisas3','coisas3','coisas4']
+
+    let lista = ['LISTA','LISTA1','LISTA2',...listaCoisas]
+    
+    console.log(lista)
+
+
+    let literal = {nome:'objeto', sobrenome:'literal'}
+    let abstrato = {composicao:'abstrata',obra:'Salvador',...literal}
+
+    console.log(abstrato)
+    
+
+//rest - juntar
+   
+  function soma(...Parametro) {
+
+    let resultado = 0
+  
+
+  Parametro.forEach( valor => resultado += valor)
+  return resultado
+  }
+
+
+  console.log(soma(1,2,3,4,5,6,7,10))
+
+
+  function multiplica(m,...parametro){
+
+  let resultado = 0
+
+
+  parametro.forEach( x => resultado += m*x )
+
+
+  return resultado
+
+  }
+  
+  console.log(multiplica(2,4,5))
+
+
+
+
+    </script>
+
+    
+    
+  </head>
+  <body>
+    
+  </body>
+</html>
