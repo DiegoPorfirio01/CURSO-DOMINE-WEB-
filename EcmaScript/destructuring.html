@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript</title>
+    
+    <script>
+    //destructuring
+
+   
+    /*
+    let frase = ['frase1','frase2','frase3','frase4']
+    
+    //caso o parametro n exista, podemos configurar parâmetros default como em 'd'
+    let [a='abacate',b, ,c,d = 'deus'] = frase
+//no destruturing, já se cria variaveis, só de estruturar.
+
+    console.log(a,b,c,d)
+        
+        let coisas = [['frase1','frase2','frase3','frase4'] , ['COISA','COISA2','COISA3','COISA4']]
+
+
+//pula a o primeiro array e o primeiro item do segundo array 
+        let [,[,B]] = coisas    
+        
+        console.log(B)  
+
+
+
+let produto = { descricao:'aeronave',produtos:{fabricante:'yoshiba',qualidade:'razoavel'}}
+
+
+let {descricao:A='muito bom',preco:A1='barato', produtos:{qualidade:B2='NÃO INFORMADO/default'}  } = produto
+
+
+console.log(A,A1,B2)
+
+
+
+
+let lista = ['azul','branco','vermelho']
+
+function cores([a,b,v]){
+
+    console.log(a,b,v)
+}
+
+cores(lista)
+
+
+//no caso do objeto literal, o destructor extrai de fato o atributo do objeto desejado.
+
+let lista1 = {
+
+    a:1,
+    b:2,
+    c:3,
+    d:4,
+    e:5,
+}
+
+function teste({a:x,b,f=6}) {
+
+    console.log(x,b,f)
+}
+
+teste(lista1)
+
+*/
+
+let numeros = [1,2,3,4]
+
+let [b,...resto] = numeros
+
+console.log(b,resto)
+
+
+let objeto = {
+
+    a:1,
+    b:2,
+    c:3,
+}
+
+let {a,...resto1} = objeto
+
+console.log(a,resto1)
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
